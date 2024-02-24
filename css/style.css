@@ -1,0 +1,372 @@
+@import url(reset.css);
+@import url(hover.css);
+
+:root {
+  --primary-color: black;
+  --secondary-color: rgb(255, 255, 255);
+  --primary-bg-color: white;
+  --secondary-bg-color: rgb(153, 107, 63);
+  --font-primary: "Inter";
+  --font-secondary: "arial";
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 5% 25% 10% 50% 10%;
+  text-align: center;
+  align-items: center;
+  height: 80px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
+}
+.Header>div:first-child {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 20% 5% 75%;
+  text-align: left;
+}
+.logo{
+    grid-column: 1/2;
+    width: 60px;
+    height: 100%;
+}
+.logo-name{
+    margin-left: 1px;
+    grid-column: 3/3;
+} 
+.Header>div:nth-child(2){
+    opacity: 0;
+    cursor:default;
+    width: 10px;
+    height: 10px;
+}
+.Header>div:last-child {
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* Navigator Section Done */
+
+
+
+.About{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10,50px) 25px 25px;
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+    opacity: 0.9;
+}
+.back-img{
+    opacity: 0.8;
+    grid-column: 1/10;
+    grid-row: 1/11;
+    z-index: -1;
+}
+.Welcome{
+    opacity: 1;
+    font-size: 30px;
+    grid-area: 2/2/2/7;
+}
+.Name{
+    font-size: 40px;
+    grid-area: 3/2/4/6;
+}
+.Where{
+    font-size: 30px;
+    grid-area: 4/2/6/6;
+}
+.description{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    grid-area: 6/2/7/6;
+}
+.social{
+    grid-area: 4/9/8/10;
+    display: grid;
+    grid-template-rows: 10px 30px 10px 10px 30px 10px 10px 30px 10px 10px 30px 10px;
+    grid-template-columns: 10px 30px 10px;
+    opacity: 0.7;
+}
+.social>div:first-child{
+    grid-area: 2/2/3/3;
+}
+.social>div:nth-child(2){
+    grid-area: 5/2/6/3;
+}
+.social>div:nth-child(3){
+    grid-area: 8/2/9/3;
+}
+.social>div:last-child{
+    grid-area: 11/2/12/3;
+}
+.Booking{
+  background-color: var(--primary-bg-color);
+    grid-area: 10/2/12/6;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,25px);
+    font-weight: bold;
+    box-shadow: 1px 1px 50px black;
+}
+.Booking>div:first-child{
+    grid-area: 1/1/4/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.Month{
+    grid-area: 2/2/3/3;
+}
+.Day{
+    grid-area: 2/1/3/2;
+}
+.CheckInOut{
+  grid-area: 1/1/2/3;
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+.Booking>div:nth-child(2){
+    grid-area: 1/3/5/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.Booking>div:nth-child(3){
+    grid-area: 1/5/3/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.Guest{
+  grid-area: 1/1/2/3;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  opacity: 0.7;
+}
+.Number{
+  grid-area: 2/1/3/3;
+}
+.Booking>button{
+    border: none;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg-color);
+    grid-area: 1/7/4/9;
+    cursor: pointer;
+}
+/* About Setion Done */
+
+
+/* First Room */
+.Rooms>div:first-child{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.Image{
+  width: 400px;
+  height: auto;
+  background-color: aqua;
+}
+.Description{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.Description>p:first-child{
+  grid-area: 2/2/3/7;
+  font-size: 30px;
+  align-self: center;
+}
+.Description>p:nth-child(2){
+  grid-area: 2/5/3/5;
+  font-size: 25px;
+  font-weight: bolder;
+  color: var(--secondary-bg-color);
+  text-align: end;
+  align-self: center;
+}
+.Description>p:nth-child(3){
+  grid-area: 2/6/3/6;
+  align-self: center;
+}
+.Description>p:nth-child(4){
+  grid-area: 3/2/5/6;
+  opacity: 0.8;
+}
+.Book{
+  grid-area: 5/2/5/4;
+  background-color: var(--secondary-bg-color);
+  font-weight: bolder;
+  color: var(--primary-bg-color);
+  border: none;
+}
+.Details{
+  grid-area: 5/5/6/7;
+  height: 20px;
+  align-self: center;
+  font-weight: bolder;
+  border: none;
+  background-color: rgb(211, 209, 209);
+}
+/* Second Room */
+.Rooms>div:nth-child(2){
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+/* Third Room */
+.Rooms>div:nth-child(3){
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+/* Fourth Room */
+.Rooms>div:nth-child(4){
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+/* Main Section Done */
+
+
+.Footer{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+}
+.Footer>div:first-child{
+  grid-area: 2/1/3/2;
+  text-align: center;
+  display: grid;
+}
+.Footer>div:first-child>div,.Footer>div:nth-child(2)>div,.Footer>div:last-child>div{
+  margin-top: 10px;
+}
+.Footer>div:first-child>div>p,.Footer>div:nth-child(2)>div>p,.Footer>div:last-child>div>p{
+  opacity: 0.5;
+}
+.Footer>div:nth-child(2){
+  grid-area: 2/2/3/3;
+  text-align: center;
+}
+.Footer>div:last-child{
+  grid-area: 2/3/3/4;
+  text-align: center;
+}
+
+/* Footer Section Done */
+
+/* Less than 780px */
+@media (max-width: 750px) {
+  .Header {
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Header>div:first-child {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-align: left;
+  }
+
+  .logo{
+    grid-column: 1/1;
+    width: 50px;
+    height: 100%;
+}
+.logo-name{
+    grid-column: 2/2;
+    margin-left: 1px;
+} 
+  .Header>div:nth-child(2){
+    grid-column: 4/4;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+
+  }
+  .Header>div:nth-child(2):hover{
+    opacity: 0.5;
+    border-radius: 50px;
+    border: 1px solid black;
+  }
+
+  .Header>div:last-child {
+    display: none;
+  }
+  .Booking{
+    grid-area: 10/2/12/6;
+    display: grid;
+    /* grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,25px); */
+    min-width: 300px;
+}
+  .Rooms>div:first-child{
+    display: block;
+  }
+  .Room{
+    margin: 0 auto;
+    width: 350px;
+  }
+  .Rooms>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+  }
+  #room1{
+    order: 1;
+  }
+  #dis1{
+    order: 2;
+  }
+  .Rooms>div:nth-child(3){
+    display: block;
+  }
+  .Rooms>div:last-child{
+    display: flex;
+    flex-direction: column;
+  }
+  #room2{
+    order: 1;
+  }
+  #dis2{
+    order: 2;
+  }
+}
+/* Less than 500px */
+@media (max-width: 500px){
+  .description{
+    display: none;
+  }
+  .Where{
+    display: none;
+  }
+  .Welcome{
+    grid-area: 4/3/4/8;
+  }
+  .Name{
+    grid-area:5/3/5/8;
+  }
+  .Description>p:nth-child(2){
+    grid-area: 1/2/2/3;
+  }
+  .Description>p:nth-child(3){
+    grid-area: 1/3/2/6;
+  }
+}

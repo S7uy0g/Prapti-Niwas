@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prapti Niwas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="images\Icons\icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <section class="body">
+            <section class="Header">
+                <div>
+                    <div class="logo">
+                        <img src="images\Icons\icon.png">
+                    </div>
+                    <div class="logo-name">
+                        <h1>PRAPSS NIWAS</h1>
+                        <h2>Luxury Hotel</h2>
+                    </div>
+                </div>
+                <div>
+                    <img class="menu" src="images\Icons\menu.png">
+                </div>
+                <div>
+                    <p>HOME</p>
+                    <p>ROOMS</p>
+                    <p>RESERVATION</p>
+                    <p>CONTACTS</p>
+                </div>
+            </section>
+            <section class="About">
+                <img src="images\Main.jpg" class="back-img">
+                <p class="Welcome">Welcome to hotel</p>
+                <h1 class="Name">Rai Niwas</h1>
+                <p class="Where">where <strong>Luxury</strong> meets <strong>Comfort</strong></p>
+                <p class="description">Our exquisite hotel offers a perfect blend of modern elegance and warm hospitality, providing an unparalleled experience for both business and leisure travelers.</p>
+                <div class="social">
+                    <div><img src="images\socials\facebook.png"></div>
+                    <div><img src="images\socials\gmail.png"></div>
+                    <div><img src="images\socials\instagram.png"></div>
+                    <div><img src="images\socials\twitter.png"></div>
+                </div>
+                <div class="Booking">
+                    <div class="CheckIn">
+                        <label class="CheckInOut">Check In</label>
+                        <div class="Day">
+                            <select id="day" name="day">
+                                <script>
+                                    for (let i = 1; i <= 32; i++) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                        <div class="Month">
+                            <select id="month" name="month">
+                                <script>
+                                    for (let i = 1; i <= 12; i++) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="CheckOut">
+                        <label class="CheckInOut">Check Out</label>
+                        <div class="Day">
+                            <select id="day" name="day">
+                                <script>
+                                    for (let i = 1; i <= 32; i++) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                        <div class="Month">
+                            <select id="month" name="month">
+                                <script>
+                                    for (let i = 1; i <= 12; i++) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="Guests">
+                        <label class="Guest">Guests</label>
+                        <div class="Number">
+                            <select id="num" name="num">
+                                <script>
+                                    for (let i = 1; i <= 5; i++) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                    </div>
+                    <button>Check Availability</button>
+                </div>
+            </section>
+            <section class="Rooms">
+                <div>
+                    <div class="Room"><img src="images\Lux-Single.jpg"></div>
+                    <div class="Description">
+                        <p>Luxury Room</p>
+                        <p>200$</p>
+                        <p>/NIGHT</p>
+                        <p>1 king sized bed ,free wifi,24hrs room service, Terrace view, TV, Spa and Jacuuzi, Complimentary refreshment</p>
+                        <button class="Book">BOOK NOW</button>
+                        <button class="Details">DETAILS</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="Description" id="dis1">
+                        <p>Luxury Double</p>
+                        <p>250$</p>
+                        <p>/NIGHT</p>
+                        <p>2 bed ,free wifi, 24hrs room service, Terrace view, TV, Spa and Jacuuzi, Complimentary refreshment</p>
+                        <button class="Book">BOOK NOW</button>
+                        <button class="Details">DETAILS</button>
+                    </div>
+                    <div class="Room" id="room1"><img src="images\Lux-Double.jpg"></div>
+                </div>
+                <div>
+                    <div class="Room"><img src="images\Nor-Single.jpg"></div>
+                    <div class="Description">
+                        <p>Single Room</p>
+                        <p>100$</p>
+                        <p>/NIGHT</p>
+                        <p>1 queen sized bed ,free wifi,24hrs room service</p>
+                        <button class="Book">BOOK NOW</button>
+                        <button class="Details">DETAILS</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="Description" id="dis2">
+                        <p>Double Room</p>
+                        <p>150$</p>
+                        <p>/NIGHT</p>
+                        <p>2 bed ,free wifi,24hrs room service</p>
+                        <button class="Book">BOOK NOW</button>
+                        <button class="Details">DETAILS</button>
+                    </div>
+                    <div class="Room" id="room2"><img src="images\Nor-Double.jpg"></div>
+                </div>
+            </section>
+            <section class="Footer">
+                <div>
+                    <h1>QUICK LINKS</h1>
+                    <div><p>Special Offers</p>
+                        <p>Gift Cards</p>
+                        <p>Last Minute Deals</p>
+                        <p>Need Help?</p></div>
+                </div>
+                <div>
+                    <h1>ABOUT US</h1>
+                    <div>
+                    <p>Careers</p>
+                    <p>Development</p>
+                    <p>Management Service</p>
+                    <p>History</p></div>
+                </div>
+                <div>
+                    <h1>GET IN TOUCH</h1>
+                    <div>
+                    <p>Contact Us</p>
+                    <p>Get Social</p>
+                    <p>International Callers</p>
+                    <p>Travel Professionals</p></div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
